@@ -11,14 +11,12 @@
 
 #include<stdio.h>
 int main() {
-    int count_led;
     int n;
     printf("Enter No: ");
     scanf("%d",&n);
     for(int i=0;i<8;i++) {
         if(n & (1<<i)) {
             printf("%d no LED is On\n",i+1);
-            count_led++;
         }
     }        
 }
