@@ -9,4 +9,6 @@ int main() {
     unsigned char sensor_id;
     sensor_id = (data & 0x70) >> 4;
     printf("%u",sensor_id);
+
+    
 }
