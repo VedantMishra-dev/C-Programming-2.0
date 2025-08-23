@@ -5,10 +5,8 @@
 
 #include <stdio.h>
 int main() {
-    unsigned char data = 0x5A;
+    unsigned char data = 0x2B; // there is a sensor id in between 3-5 bit
     unsigned char sensor_id;
-    sensor_id = (data & 0x70) >> 4;
+    sensor_id = (data & 0x70) >> 3;
     printf("%u",sensor_id);
-
-    
 }
