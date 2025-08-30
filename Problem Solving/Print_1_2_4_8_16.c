@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdint.h>
 int main() {
     int n = 5;
     int a = 1;
@@ -6,4 +7,5 @@ int main() {
         printf("%d ",a);
         a = a * 2;
     }
+    
 }
