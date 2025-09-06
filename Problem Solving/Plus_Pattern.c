@@ -9,7 +9,7 @@ int main()
          if (n % 2 == 0)
         {
             printf("Please Enter Odd No : \n");
-            continue;
+            continue;       
         }
         int mid = (n + 1) / 2;
         for (int i = 1; i <= n; i++)
