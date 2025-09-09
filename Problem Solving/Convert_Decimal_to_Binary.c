@@ -12,15 +12,17 @@ int change(int n,int binary[]) {
 }
 
 int main() {
-    int n = 12;
+    int n;
+    printf("Enter No: ");
+    scanf("%d", &n);
     int binary[32];
 
     int bits;
-    
+
     bits = change(n,binary);
-    printf("Binary stored: ");
-    for (int j = bits - 1; j >= 0; j--) {
-        printf("%d", binary[j]);
+    
+    for(int j=bits-1;j>=0;j--) {
+        printf("%d ",binary[j]);
     }
     
 }

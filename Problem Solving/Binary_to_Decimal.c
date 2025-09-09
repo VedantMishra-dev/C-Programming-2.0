@@ -1,27 +1,23 @@
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
+#include<stdio.h>
+#include<stdint.h>
 
-unsigned int binary_to_decimal(const char *binary_str) {
-    unsigned int decimal = 0;
-    int len = strlen(binary_str);
-
-    // Traverse from rightmost bit (LSB)
-    for (int i = 0; i < len; i++) {
-        if (binary_str[len - i - 1] == '1') {
-            decimal += (1 << i);  // 2^i
-        }
+int change(int binary) {
+    int lastdigit=0,base = 1,decimal =0;
+    while(binary>0) {
+        lastdigit = binary%10;
+        decimal = decimal + lastdigit*base;
+        base = base*2;
+        binary = binary/10;
     }
     return decimal;
 }
 
 int main() {
-    char binary[33];
-    printf("Enter a binary number: ");
-    scanf("%32s", binary);
+    long long binary;
+    printf("Enter No: ");
+    scanf("%d", &binary);
 
-    unsigned int decimal = binary_to_decimal(binary);
-    printf("Decimal: %u\n", decimal);
-
-    return 0;
+    printf("%d",change(binary));
+    
+    
 }
