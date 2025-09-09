@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdint.h>
 
-static void clear_bit(uint8_t *reg,int bit) {
+static inline void clear_bit(uint8_t *reg,int bit) {
     *reg = *reg & (~(1u << bit));
 }
 
