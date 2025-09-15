@@ -9,7 +9,6 @@ bool areAnagrams(char str1[], char str2[])
     {
         return false;
     }
-
     int count[256] = {0};
 
     for (int i = 0; str1[i] != '\0'; i++)
