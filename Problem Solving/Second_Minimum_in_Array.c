@@ -10,8 +10,8 @@ int main() {
     }
 
     //find maximum 
-    int mx = INT_MIN;
-    int smx = INT_MIN;
+    int mn = INT_MAX;
+    int smn = INT_MAX;
 
     for(int i=0;i<n;i++) {
         if(arr[i]>mx) {
