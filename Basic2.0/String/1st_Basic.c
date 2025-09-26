@@ -5,10 +5,16 @@ void print_str(char str[]) {
         printf("%c",str[i]);
         i++;
     }
+    printf("\n");
 }
 int main() {
     // char str[] = {'V','e','d','a','n','t','\0'};
-    char str[] = "Vedant";
+    char str[7] = "Vedant";
     print_str(str);
+    char str2[34];
+    gets(str2);
+    puts(str2);
+    printf("\n");
+    printf("%s ",str2);
     return 0;
 }
