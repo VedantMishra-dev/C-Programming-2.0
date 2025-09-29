@@ -1,4 +1,4 @@
-#include "reversing_array.h"
+#include "main.h"
 
 void rotate_array(int arr[], int n, int k) {
     k = k % n; // handle k > n

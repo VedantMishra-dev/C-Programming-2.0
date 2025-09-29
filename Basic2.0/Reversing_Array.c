@@ -1,4 +1,4 @@
-#include "Reversing_Array.h"
+#include "main.h"
 
 void reverse_array(int arr[], int start, int end) {
     while(start < end) {
