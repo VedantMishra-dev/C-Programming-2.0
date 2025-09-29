@@ -5,4 +5,7 @@ int main() {
     char array2[] = "hello";
     printf("%d ",sizeof(array1));
     printf("%d ",sizeof(array2));
+    char *ptr = array1;
+    printf("SIZE %d ",sizeof(ptr));
+
 }
